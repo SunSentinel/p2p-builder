@@ -1,24 +1,70 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-sans-serif;
+  font-weight: 600;
+  max-width:600px;
   margin: 0 0 0.25rem 0;
 }
 
-h1 {
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 60px;
-  padding-top: 20px;
+h1{
+  font-family:$heading-serif;
+  font-size:3.5em;
+  line-height:1.3em;
+  margin:1em auto 10px;
+  text-align: center;
+  @include tablet{
+    font-size:2.5em;
+  }
+  @include mobile{
+    font-size:1.8em;
+  }
 }
-
-h2 {
-  font-family: $heading-serif;
-  font-size: 36px;
-  font-weight: 600;
+h2{
+  font-size:2.5em;
+  line-height:1.3em;
+  margin:1em auto;
+  @include tablet{
+    font-size:2em;
+  }
+  @include mobile{
+    font-size:1.5em;
+  }
 }
 
 h3 {
-  font-size: 27px;
-  font-family: $heading-sans-serif;
+  font-size: 2em;
+  line-height: 1.3em;
+  margin: 2em auto 1em;
+  @include tablet{
+    font-size:1.5em;
+  }
+  @include mobile{
+    font-size:1.2em;
+  }
+}
+h4{
+  font-size:1.5em;
+  line-height:1.5em;
+  margin:2em auto 1em;
+  @include tablet{
+    font-size:1.2em;
+    line-height:1.3em;
+  }
+  @include mobile{
+    font-size:1em;
+  }
+}
+h5{
+  font-size:1em;
+  line-height:1.5em;
+  margin:2em auto 1em;
+  @include mobile{
+    font-size:0.9em;
+  }
 }
 
 #container > p {
@@ -30,7 +76,7 @@ h3 {
   font: 18px/27px $body-serif;
   color: #333;
 
-  @include media($small-screen-down)  {
+  @include mobile  {
       font-size: 15px;
       line-height: 25px;
   }

@@ -1,4 +1,16 @@
 {
 	"title": "Interactive Starter Kit | Sun Sentinel",
-	"headline": "Hello World!"
+	"headline": "Headline goes here",
+	"reporters": [{
+      "name": "Name Here",
+      "url": "#",
+      "operator": "and "
+    },
+    {
+      "name": "Name Here",
+      "url": "#",
+      "operator": ""
+    }
+  ],
+  "pub_date": "Jan. 1, 1910"
 }
